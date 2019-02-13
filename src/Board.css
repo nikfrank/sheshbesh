@@ -24,12 +24,12 @@
 
 
 .p2-home {
-  background-color: red;
+  background-color: blue;
   height: 100%;
   width: 9%;
 }
 .p1-home {
-  background-color: blue;
+  background-color: red;
   height: 100%;
   width: 9%;
 }
@@ -99,6 +99,10 @@
 .bottomRow .pip:nth-child(2n+1):after {
   bottom: 0;
   border-bottom: 16vw solid #b60;
+}
+
+.bottomRow .pip svg {
+  transform: rotate( 180deg );
 }
 
 .jail {
