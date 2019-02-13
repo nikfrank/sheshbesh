@@ -11,13 +11,13 @@ class Board extends Component {
           <div className="p2-home"/>
 
           {Array(6).fill(0).map((o,j)=>(
-            <div className="pip">
-              <svg viewBox='0 0 100 1000' style={{ position: 'absolute', left: 0, zIndex: 100}}>
+            <div className="pip" key={'s1'+j}>
+              <svg viewBox='0 0 80 400' style={{ position: 'absolute', maxHeight: '100%', left: 0, zIndex: 100}}>
                 {p1.filter(p=> p===j+1).map((o, i)=>(
-                  <circle key={i} cx={50} cy={26 + 53*i} r={25} fill='red' stroke='black' strokeWidth={3}/>
+                  <circle key={'p11'+i} cx={40} cy={26 + 53*i} r={25} fill='red' stroke='black' strokeWidth={3}/>
                 ))}
                 {p2.filter(p=> p===j+1).map((o, i)=>(
-                  <circle key={i} cx={50} cy={26 + 53*i} r={25} fill='blue' stroke='black' strokeWidth={3}/>
+                  <circle key={'p21'+i} cx={40} cy={26 + 53*i} r={25} fill='blue' stroke='black' strokeWidth={3}/>
                 ))}
               </svg>
             </div>
@@ -26,13 +26,13 @@ class Board extends Component {
           <div className="jail"/>
 
           {Array(6).fill(0).map((o,j)=>(
-            <div className="pip">
-              <svg viewBox='0 0 100 1000' style={{ position: 'absolute', left: 0, zIndex: 100}}>
+            <div className="pip" key={'s2'+j}>
+              <svg viewBox='0 0 80 400' style={{ position: 'absolute', maxHeight: '100%', left: 0, zIndex: 100}}>
                 {p1.filter(p=> p===j+7).map((o, i)=>(
-                  <circle key={i} cx={50} cy={26 + 53*i} r={25} fill='red' stroke='black' strokeWidth={3}/>
+                  <circle key={'p12'+i} cx={40} cy={26 + 53*i} r={25} fill='red' stroke='black' strokeWidth={3}/>
                 ))}
                 {p2.filter(p=> p===j+7).map((o, i)=>(
-                  <circle key={i} cx={50} cy={26 + 53*i} r={25} fill='blue' stroke='black' strokeWidth={3}/>
+                  <circle key={'p22'+i} cx={40} cy={26 + 53*i} r={25} fill='blue' stroke='black' strokeWidth={3}/>
                 ))}
               </svg>
             </div>
@@ -41,13 +41,13 @@ class Board extends Component {
 
         <div className="bottomRow">
           {Array(6).fill(0).map((o,j)=>(
-            <div className="pip">
-              <svg viewBox='0 0 100 500' style={{ position: 'absolute', left: 0, zIndex: 100}}>
+            <div className="pip" key={'s3'+j}>
+              <svg viewBox='0 0 80 400' style={{ position: 'absolute', maxHeight: '100%', left: 0, zIndex: 100}}>
                 {p1.filter(p=> p===j+13).map((o, i)=>(
-                  <circle key={i} cx={50} cy={26 + 53*i} r={25} fill='red' stroke='black' strokeWidth={3}/>
+                  <circle key={'p13'+i} cx={40} cy={26 + 53*i} r={25} fill='red' stroke='black' strokeWidth={3}/>
                 ))}
                 {p2.filter(p=> p===j+13).map((o, i)=>(
-                  <circle key={i} cx={50} cy={26 + 53*i} r={25} fill='blue' stroke='black' strokeWidth={3}/>
+                  <circle key={'p23'+i} cx={40} cy={26 + 53*i} r={25} fill='blue' stroke='black' strokeWidth={3}/>
                 ))}
               </svg>
             </div>
@@ -56,13 +56,13 @@ class Board extends Component {
           <div className="jail"/>
 
           {Array(6).fill(0).map((o,j)=>(
-            <div className="pip">
-              <svg viewBox='0 0 100 500' style={{ position: 'absolute', height: '100%', left: 0, zIndex: 100}}>
+            <div className="pip" key={'s4'+j}>
+              <svg viewBox='0 0 80 400' style={{ position: 'absolute', maxHeight: '100%', left: 0, zIndex: 100}}>
                 {p1.filter(p=> p===j+19).map((o, i)=>(
-                  <circle key={i} cx={50} cy={26 + 53*i} r={25} fill='red' stroke='black' strokeWidth={3}/>
+                  <circle key={'p14'+i} cx={40} cy={26 + 53*i} r={25} fill='red' stroke='black' strokeWidth={3}/>
                 ))}
                 {p2.filter(p=> p===j+19).map((o, i)=>(
-                  <circle key={i} cx={50} cy={26 + 53*i} r={25} fill='blue' stroke='black' strokeWidth={3}/>
+                  <circle key={'p24'+i} cx={40} cy={26 + 53*i} r={25} fill='blue' stroke='black' strokeWidth={3}/>
                 ))}
               </svg>
             </div>
