@@ -1,34 +1,3 @@
-
-./src/App.js
-```js
-  state = {
-    pieces: [
-      [
-        1, 1,
-        12, 12, 12, 12, 12,
-        17, 17, 17,
-        19, 19, 19, 19, 19,
-      ], [
-        24, 24,
-        13, 13, 13, 13, 13,
-        8, 8, 8,
-        6, 6, 6, 6, 6,
-      ]
-    ]
-  }
-  
-  render() {
-    return (
-      <div className="App">
-        <Board pieces={this.state.pieces}/>
-      </div>
-    );
-  }
-```
-
-
-./src/Board.js
-```js
 import React, { Component } from 'react';
 import './Board.css';
 
@@ -83,15 +52,3 @@ class App extends Component {
 }
 
 export default App;
-```
-
-
-./src/Board.css
-```css
-
-
-```
-
-
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

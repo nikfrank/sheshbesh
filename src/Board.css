@@ -1,0 +1,107 @@
+.Board {
+  height: 80vh;
+  max-height: 56vw;
+  
+  width: 80vw;
+  
+  margin: 10vh auto;
+  background-color: #afc;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.topRow {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 50%;
+}
+.bottomRow {
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+}
+
+
+.p2-home {
+  background-color: red;
+  height: 100%;
+  width: 9%;
+}
+.p1-home {
+  background-color: blue;
+  height: 100%;
+  width: 9%;
+}
+
+.pip {
+  width: 7%;
+  height: 100%;
+}
+.pip:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  
+  width: 0; 
+  height: 0; 
+  border-left: 2.8vw solid transparent;
+  border-right: 2.8vw solid transparent;
+}
+.pip:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  
+  width: 0; 
+  height: 0; 
+  border-left: 2.8vw solid transparent;
+  border-right: 2.8vw solid transparent;
+}
+
+.pip:nth-child(2n) {
+  background-color: #630;
+  position: relative;
+}
+.topRow .pip:nth-child(2n):before {
+  top: 0;
+  border-top: 20vw solid #007;
+}
+.bottomRow .pip:nth-child(2n):before {
+  bottom: 0;
+  border-bottom: 20vw solid #007;
+}
+.topRow .pip:nth-child(2n):after {
+  top: 0;
+  border-top: 16vw solid #498;
+}
+.bottomRow .pip:nth-child(2n):after {
+  bottom: 0;
+  border-bottom: 16vw solid #498;
+}
+
+.pip:nth-child(2n+1) {
+  position: relative;
+  background-color: #630;
+}
+.topRow .pip:nth-child(2n+1):before {
+  top: 0;
+  border-top: 20vw solid #700;
+}
+.bottomRow .pip:nth-child(2n+1):before {
+  bottom: 0;
+  border-bottom: 20vw solid #700;
+}
+.topRow .pip:nth-child(2n+1):after {
+  top: 0;
+  border-top: 16vw solid #b60;
+}
+.bottomRow .pip:nth-child(2n+1):after {
+  bottom: 0;
+  border-bottom: 16vw solid #b60;
+}
+
+.jail {
+  width: 7%;
+  height: 100%;
+}
