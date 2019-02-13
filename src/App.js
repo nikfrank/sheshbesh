@@ -20,11 +20,16 @@ class App extends Component {
       ]
     ]
   }
+
+  onClickPip = (pip)=>{
+    console.log(pip);
+  }
   
   render() {
     return (
       <div className="App">
-        <Board pieces={this.state.pieces}/>
+        <Board pieces={this.state.pieces}
+               onClickPip={this.onClickPip}/>
       </div>
     );
   }
